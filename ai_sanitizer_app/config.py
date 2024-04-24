@@ -8,11 +8,11 @@ SENSITIVE_DATA_CONFIGS = {
         "placeholder": "[CREDIT_CARD]"
     },
     "US_SSN": {
-        "pattern": r"\b\d{3}-?\d{2}-?\d{4}\b",
+        "pattern": r"\b(?!\d{9}$)\d{3}-?\d{2}-?\d{4}\b",
         "placeholder": "[US_SSN]"
     },
     "US_BANK_ACCOUNT": {
-        "pattern": r"\b\d{3}-?\d{2}-?\d{4}-?\d{4}\b",
+        "pattern": r"\b\d{9}\b",
         "placeholder": "[US_BANK_ACCOUNT]"
     },
     "PHONE_NUMBER": {
@@ -28,7 +28,7 @@ SENSITIVE_DATA_CONFIGS = {
         "placeholder": "[UUID]"
     },
     "US_DRIVING_LICENSE": {
-        "pattern": r"\b[A-Z]\d{9}[A-Z]\b",
+        "pattern": r"\b[A-Z]{1,2}\d{4,8}\b",
         "placeholder": "[US_DRIVING_LICENSE]"
     },
     "IBAN_CODE": {
