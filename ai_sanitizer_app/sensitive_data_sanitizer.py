@@ -3,7 +3,7 @@ from config import SENSITIVE_DATA_CONFIGS
 
 
 class SensitiveDataSanitizer:
-    def __init__(self):
+    def __init__(self) -> None:
         self.sensitive_data = SENSITIVE_DATA_CONFIGS
 
     def sanitize_input(self, input_content: str) -> str:
