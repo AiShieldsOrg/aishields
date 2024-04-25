@@ -1,6 +1,6 @@
 import pytest
 from ai_sanitizer_app.sensitive_data_sanitizer import SensitiveDataSanitizer
-from config import SENSITIVE_DATA_CONFIGS
+from ai_sanitizer_app.config import SENSITIVE_DATA_CONFIGS
 
 test_cases = {
     "CREDIT_CARD": "4012-8888-8888-8881",
