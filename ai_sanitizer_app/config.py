@@ -36,7 +36,8 @@ SENSITIVE_DATA_CONFIGS = {
         "placeholder": "[IBAN_CODE]"
     },
     "PERSON_NAME": {
-        "pattern": r"\b[A-Z][a-z]+\s[A-Z][a-z]+\b",
+        "pattern": r"\b[A-Z][a-z]*(?:-[A-Z][a-z]*)? "
+                   r"(?:[A-Z]\.? )?[A-Z][a-z]*(?:-[A-Z][a-z]*)?(?:,? (Jr\.|Sr\.|III|IV|Ph\.D\.))?",
         "placeholder": "[PERSON_NAME]"
     }
 }

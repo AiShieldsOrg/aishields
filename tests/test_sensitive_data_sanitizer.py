@@ -11,8 +11,8 @@ test_cases = {
     "US_SSN": "123-45-6789",
     "UUID": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "US_DRIVING_LICENSE": "CA1234567",
-    "PERSON_NAME": "John Doe",
     "US_BANK_ACCOUNT": "123456789",
+    "PERSON_NAME": "John A. Doe Jr.",
 }
 
 
@@ -23,7 +23,7 @@ def sensitive_data_sanitizer():
 
 def test_sanitize_input(sensitive_data_sanitizer):
     for entity, input_content in test_cases.items():
-        input_prompt = f"Test with {input_content}"
+        input_prompt = f"Test {entity} with {input_content}"
         placeholder = SENSITIVE_DATA_CONFIGS[entity]["placeholder"]
         sanitized_input = sensitive_data_sanitizer.sanitize_input(input_prompt)
         assert placeholder in sanitized_input, f"Failed to sanitize {entity} in {input_prompt}"
