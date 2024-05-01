@@ -1,9 +1,13 @@
+#=== THIS CODE REQUIRES NODE.JS AND PUPPETEER TO RUN. INSTALL HERE: https://nodejs.org/en ===
+#=== THEN IN THE COMMAND LINE IN THE FOLDER CONTAINING googlesearch2.js, RUN: npm install puppeteer
+
 from rake_nltk import Rake
 import subprocess
 import pandas as pd
 import json
 import os
 
+#=== NEEDS TO BE THE LOCATION OF googlesearch2.js === 
 SEARCH_SCRIPT_DIRECTORY = ''
 
 if SEARCH_SCRIPT_DIRECTORY == '':
