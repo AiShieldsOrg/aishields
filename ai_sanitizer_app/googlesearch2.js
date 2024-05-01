@@ -1,4 +1,6 @@
 //if content falls behind a paywall or authentication wall, do not use
+//#=== THIS CODE REQUIRES NODE.JS AND PUPPETEER TO RUN. INSTALL HERE: https://nodejs.org/en ===
+//#=== THEN IN THE COMMAND LINE IN THE FOLDER CONTAINING googlesearch2.js, RUN: npm install puppeteer
 
 const puppeteer = require('puppeteer')
 const fs = require('fs')
