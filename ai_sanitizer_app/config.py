@@ -35,4 +35,8 @@ SENSITIVE_DATA_CONFIGS = {
         "pattern": r"\b[A-Z]{2}[0-9]{2}[a-zA-Z0-9]{4}[0-9]{14}\b",
         "placeholder": "<IBAN_CODE>"
     },
+    "OTHER": {
+        "pattern": r"\b[A-Z][a-z]+\s[A-Z][a-z]+\b",
+        "placeholder": ""
+    }
 }
