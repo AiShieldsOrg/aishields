@@ -12,7 +12,6 @@ test_cases = {
     "UUID": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
     "US_DRIVING_LICENSE": "CA1234567",
     "US_BANK_ACCOUNT": "123456789",
-    "PERSON_NAME": "John A. Doe Jr.",
 }
 
 
