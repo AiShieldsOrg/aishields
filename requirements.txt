@@ -5,3 +5,8 @@ matplotlib
 seaborn
 tqdm
 pytest
+presidio-anonymizer
+presidio_analyzer
+
+
+
