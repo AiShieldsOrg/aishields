@@ -1,5 +1,5 @@
 import re
-from ai_sanitizer_app.config import SENSITIVE_DATA_CONFIGS
+from sensitive_info_disclosure.config import SENSITIVE_DATA_CONFIGS
 from presidio_analyzer import AnalyzerEngine
 from presidio_anonymizer import AnonymizerEngine
 
